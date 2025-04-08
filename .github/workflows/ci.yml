@@ -1,0 +1,17 @@
+name: Homework CI
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Step 1 - Say Hello
+        run: echo "✅ Hello from step 1!"
+
+      - name: Step 2 - Say Bye
+        run: echo "✅ Bye from step 2!"
